@@ -30,12 +30,12 @@ body {
 a {
   color:#FFFFFF;
   text-decoration: none;
+  text-decoration: underline;
   opacity:1;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
 }
 
 /* Headings */
@@ -71,7 +71,6 @@ p {
 
 /* Lists */
 ul, ol, dl {
-  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
