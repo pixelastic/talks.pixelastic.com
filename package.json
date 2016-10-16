@@ -1,0 +1,20 @@
+{
+  "name": "talks.pixelastic.com",
+  "description": "Slides of talks I gave",
+  "author": "Tim \"pixelastic\" Carry",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pixelastic/talks.pixelastic.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pixelastic/talks.pixelastic.com/issues"
+  },
+  "scripts": {
+    "deploy": "./scripts/deploy"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
