@@ -11,4 +11,4 @@ rsync \
       --copy-links \
       --compress \
       ./source/ \
-      pixelastic:/var/www/pixelastic.com/talks.pixelastic.com/
+      pixelastic:/var/www/talks.pixelastic.com/
