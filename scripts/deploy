@@ -1,14 +1,28 @@
 #!/usr/bin/env bash
 
+# Sync the ./source/ directory, basically redirecting the root to
+# https://www.pixelastic.com/talks/
 rsync \
-      --chmod=Du=rwx,Dg=rwx,Do=rx,Fu=rw,Fg=rw,Fo=r \
-      --verbose \
-      --archive \
-      --update \
-      --delete \
-      --filter 'protect /slides/' \
-      --prune-empty-dirs \
-      --copy-links \
-      --compress \
-      ./source/ \
-      pixelastic:/var/www/talks.pixelastic.com/
+  --chmod=Du=rwx,Dg=rwx,Do=rx,Fu=rw,Fg=rw,Fo=r \
+  --verbose \
+  --archive \
+  --update \
+  --delete \
+  --filter 'protect /slides/' \
+  --prune-empty-dirs \
+  --copy-links \
+  --compress \
+  ./source/ \
+  pixelastic:/var/www/talks.pixelastic.com/
+
+# Pushing all the slides I have as pdf files
+rsync \
+  --chmod=Du=rwx,Dg=rwx,Do=rx,Fu=rw,Fg=rw,Fo=r \
+  --verbose \
+  --archive \
+  --update \
+  --prune-empty-dirs \
+  --copy-links \
+  --compress \
+  ./slides/ \
+  pixelastic:/var/www/talks.pixelastic.com/slides/
